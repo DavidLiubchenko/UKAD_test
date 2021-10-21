@@ -1,30 +1,39 @@
 <template>
-  <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </div>
-  <router-view/>
+    <nav class="page-navigation">
+
+        <div></div><!-- для отступа -->
+        <div><img src="imgs/UCAD.bmp" width="" alt="UCAD"></div>
+        <div class="activeNav"><router-link to="/">HOME</router-link></div>
+        <div><router-link to="/products">PRODUCTS</router-link></div>
+
+    </nav>
+    <router-view/>
 </template>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+nav{
+    height: 124px;
+    background-color: #002B32;
 }
 
-#nav {
-  padding: 30px;
+router-link {
+    color: white; /* Цвет ссылок */
+   }
+   A:visited {
+    color: white; /* Цвет посещенных ссылок */
+   }
+   A:active {
+    color: white; /* Цвет активных ссылок */
+   }
+.page-navigation div{
+    height: 123px;
+    display: table-cell;
+    width: 150px;
+    font-size: large;
+    text-align: center;
+    vertical-align: middle;
 }
-
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-#nav a.router-link-exact-active {
-  color: #42b983;
+.activeNav{
+    background-color: #01242b ;
 }
 </style>
