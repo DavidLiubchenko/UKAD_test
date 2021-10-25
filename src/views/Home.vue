@@ -1,76 +1,89 @@
 <template>
   <h2>Home Page</h2>
-  <div id="carousel" class="carousel">
-    <button @click="toTheLeft" class="arrow prev">⇦</button>
-    <ul>
-      <div class="post" :v-for="post in posts"> 
-        <li>
-          <h4>Имя поста {{post.title}}</h4>
-          <div> <img :src="post.img" alt="Типа картинка тут"></div>
-          <h5>Описание поста {{post.body}}</h5>
-        </li>
+  <div id="carusel">
+
+    <button @click="toTheLeft" class="arrow prev"> &#8249; </button>
+
+      <div class="post" :key="idx" v-for="(post, idx) in posts">
+        
+        <img class="srcImg" :src='post.imgSrc' alt="Здесь невидимая картинка"> 
+        <h4>{{post.title}}</h4>
+        <h5>{{post.body}}</h5>
       </div>
-    </ul>
-    
-    <button @click="toTheRight" class="arrow next">⇨</button>
+
+    <button @click="toTheRight" class="arrow next">&#8250;</button>
+
   </div>
 </template>
 
 <script>
-
-  export default {
-    data() {
-      return {
-        posts: [
-
-          {id:1, title:'один', img:'', body:'Описание чего-то 1'},
-          {id:2, title:'два', img:'', body:'Описание чего-то 2'},
-          {id:3, title:'три', img:'', body:'Описание чего-то 3'},
-          {id:4, title:'четыре', img:'', body:'Описание чего-то 4'},
-          {id:5, title:'пять', img:'', body:'Описание чего-то 5'},
-          {id:6, title:'шесть', img:'', body:'Описание чего-то 6'},
-          {id:7, title:'семь', img:'', body:'Описание чего-то 7'},
-          {id:8, title:'восемь', img:'', body:'Описание чего-то 8'},
-
-        ],
-        width : 130,
-        count : 3,
-        list : carousel.querySelector('ul'),
-        listElems : carousel.querySelectorAll('li'),
-        position : 0,
-        }
-    },
-    methods: {
-      toTheLeft () {
-
-        this.position += this.width * this.count;
-        this.position = Math.min(this.position, 0)
-        this.list.style.marginLeft = this.position + 'px';
-
-      },
-
-      toTheRight () {
-
-        this.position -= this.width * this.count;
-        this.position = Math.max(this.position, -this.width * (this.listElems.length - this.count));
-        this.list.style.marginLeft = this.position + 'px';
-
-      }
-    },
-  }
-
-
-    // отметить картинки для удобства разработки
-
-
+export default {
+  data() {
+    return {
+      
+      posts: [
+        { id: 1, title: "один", imgSrc: "", body: "Описание чего-то 1" },
+        { id: 2, title: "два", imgSrc: "", body: "Описание чего-то 2" },
+        { id: 3, title: "три", imgSrc: "", body: "Описание чего-то 3" },
+        { id: 4, title: "четыре", imgSrc: "", body: "Описание чего-то 4" },
+        { id: 5, title: "пять", imgSrc: "", body: "Описание чего-то 5" },
+        { id: 6, title: "шесть", imgSrc: "", body: "Описание чего-то 6" },
+        { id: 7, title: "семь", imgSrc: "", body: "Описание чего-то 7" },
+        { id: 8, title: "восемь", imgSrc: "", body: "Описание чего-то 8" },
+      ],
+    };
+  },
+  methods: {
+    
+  },
+};
 
 </script>
 
 <style>
-.arrow{
-  position: block;
-}
-.post {
+#carusel{
   position: relative;
+  border: 2px solid rgb(18, 15, 228);
+  padding: 20px 90px;
+  margin: 100px 15%;
+  height: 500px;
+  width: 1240px;
+  overflow: hidden;
 }
+
+.arrow {
+  position: absolute;
+  top: 45%;
+  padding: 0;
+  background: white;
+  border-radius: 30px;
+  font-size: 24px;
+  line-height: 24px;
+  color: #444;
+  display: table-cell;
+  width: 40px;
+  height: 40px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+.prev {
+  left: 95px;
+}
+
+.next {
+  right: 105px;
+}
+
+.post{
+  display: inline-block;
+  border: 4px solid #ebebeb;
+  margin: 20px;
+  height: 440px;
+}
+  .srcImg{
+    border: 2px solid yellowgreen;
+    display: block;
+    width: 300px;
+    height: 300px;
+    
+  }
 </style>
