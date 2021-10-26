@@ -1,26 +1,41 @@
 <template>
   <h2>Home Page</h2>
-  <div id="carusel">
+  <div id="carusel" >
+    <button
+      @click="toTheLeft"
+      class="arrow prev"
+      :class="position == 0 ? 'unVisible' : ''"
+      
+    >
+      &#8249;
+    </button>
+  <div class="allPosts">
+    <div class="post" :key="post.id" v-for="post in posts" :style="{'left':'-'+(position*308)+'px'}">
+      
+        <img class="srcImg" :src="post.imgSrc" alt="Здесь невидимая картинка">
+        <h4>{{ post.title }}{{ position }}</h4>
+        <h5>{{ post.body }} {{ massPosition }}</h5>
+      
+    </div>
+  </div>
 
-    <button @click="toTheLeft" class="arrow prev"> &#8249; </button>
-
-      <div class="post" :key="idx" v-for="(post, idx) in posts">
-        
-        <img class="srcImg" :src='post.imgSrc' alt="Здесь невидимая картинка"> 
-        <h4>{{post.title}}</h4>
-        <h5>{{post.body}}</h5>
-      </div>
-
-    <button @click="toTheRight" class="arrow next">&#8250;</button>
-
+    <button
+      @click="toTheRight"
+      class="arrow next"
+      :class="position == 5 ? 'unVisible' : ''"
+    >
+      &#8250;
+    </button>
   </div>
 </template>
 
 <script>
+
 export default {
+  
   data() {
     return {
-      
+      position: 0,
       posts: [
         { id: 1, title: "один", imgSrc: "", body: "Описание чего-то 1" },
         { id: 2, title: "два", imgSrc: "", body: "Описание чего-то 2" },
@@ -33,15 +48,35 @@ export default {
       ],
     };
   },
+
   methods: {
-    
+    toTheLeft() {
+      if (this.position > 0) {
+        this.position--;
+      }
+    },
+
+    toTheRight() {
+      if (this.position < 5) {
+        this.position++;
+      }
+    },
   },
 };
-
 </script>
 
 <style>
-#carusel{
+.allPosts{
+  width: 9999px;
+  margin: 10px;
+  padding: 20px;
+  border: 2px solid red;
+  height: 440px;
+}
+.unVisible {
+  visibility: hidden;
+}
+#carusel {
   position: relative;
   border: 2px solid rgb(18, 15, 228);
   padding: 20px 90px;
@@ -52,6 +87,7 @@ export default {
 }
 
 .arrow {
+  z-index: 1;
   position: absolute;
   top: 45%;
   padding: 0;
@@ -63,7 +99,7 @@ export default {
   display: table-cell;
   width: 40px;
   height: 40px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 .prev {
   left: 95px;
@@ -73,17 +109,17 @@ export default {
   right: 105px;
 }
 
-.post{
+.post {
+  position: relative;
   display: inline-block;
   border: 4px solid #ebebeb;
   margin: 20px;
   height: 440px;
 }
-  .srcImg{
-    border: 2px solid yellowgreen;
-    display: block;
-    width: 300px;
-    height: 300px;
-    
-  }
+.srcImg {
+  border: 2px solid yellowgreen;
+  display: block;
+  width: 300px;
+  height: 300px;
+}
 </style>
