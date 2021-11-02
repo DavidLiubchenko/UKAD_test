@@ -27,7 +27,9 @@ export default {
 </script>
 <style scoped>
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap");
+
 h2 {
+  margin-top: 1%;
   font-size: 30px;
   font-family: "Raleway", sans-serif;
   position: relative;
@@ -35,25 +37,25 @@ h2 {
   left: 60px;
 }
 .allProd {
-  position: absolute;
+  position: relative;
   /* border: 2px solid red; */
-  margin: 50px;
+  margin: 2%;
   width: 95%;
-  height: 65%;
+  height: 90%;
 }
 .prod {
   position: relative;
   display: inline-block;
   border: 4px solid #ebebeb;
-  height: 50%;
+  height: 40%;
   width: 20%;
   margin: 1%;
 }
 .srcImgProd{
-  margin: 5px;
+  margin: 1%;
   display: block;
   width: auto;
-  height: 200px;
-  padding-left: 120px;
+  height: 70%;
+  padding-left: 30%;
 }
 </style>

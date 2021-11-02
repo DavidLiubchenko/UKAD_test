@@ -1,8 +1,8 @@
 <template>
   <h2 id="hmPage">Home Page</h2>
   <div id="carusel">
-    <button @click="toTheLeft" class="arrow prev" :class="{ unVisible: position == 0 }">
-      &#8249;
+    <button @click="toTheLeft"  :class="{ unVisible: position == 0 }">
+      <img src="../imgs/left_click.png" alt="leftClickButt" class="arrow prev">
     </button>
     <div class="allPosts">
       <div
@@ -17,7 +17,9 @@
       </div>
     </div>
 
-    <button v-if="position != 5" @click="toTheRight" class="arrow next">&#8250;</button>
+    <button v-if="position != 5" @click="toTheRight" >
+      <img src="../imgs/right_click.png" alt="RightClickButt" class="arrow next">
+    </button>
   </div>
 </template>
 
@@ -77,4 +79,5 @@ export default {
 
 <style scoped>
 @import "./styleHome.css";
+
 </style>
