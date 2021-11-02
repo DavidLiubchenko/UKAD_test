@@ -45,9 +45,9 @@ h2 {
   position: relative;
   display: inline-block;
   border: 4px solid #ebebeb;
-  height: 300px;
-  width: 400px;
-  margin: 10px;
+  height: 50%;
+  width: 20%;
+  margin: 1%;
 }
 .srcImgProd{
   margin: 5px;
