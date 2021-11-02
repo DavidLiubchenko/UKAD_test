@@ -1,7 +1,7 @@
 <template>
   <nav class="page-navigation">
     <div></div>
-    <div><img class="UKADimg" src="./imgs/UCAD.png" alt="UKAD" width="100px" /></div>
+    <div><img class="UKADimg" src="./imgs/UCAD.png" alt="UKAD"  /></div>
     <div
       class="link"
       @click="

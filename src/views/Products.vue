@@ -29,19 +29,20 @@ export default {
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap");
 
 h2 {
-  margin-top: 1%;
+  margin-top: 0;
   font-size: 30px;
   font-family: "Raleway", sans-serif;
   position: relative;
-  top: 40px;
-  left: 60px;
+  top: 2%;
+  left: 4%;
 }
 .allProd {
   position: relative;
+  display: block;
   /* border: 2px solid red; */
-  margin: 2%;
+  margin: 2% 5% 5% 5%;
   width: 95%;
-  height: 90%;
+  height: 75%;
 }
 .prod {
   position: relative;
@@ -54,8 +55,8 @@ h2 {
 .srcImgProd{
   margin: 1%;
   display: block;
-  width: auto;
+  width: 70%;
   height: 70%;
-  padding-left: 30%;
+  padding-left: 35% ;
 }
 </style>
