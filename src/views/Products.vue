@@ -33,8 +33,8 @@ h2 {
   font-size: 30px;
   font-family: "Raleway", sans-serif;
   position: relative;
-  top: 2%;
-  left: 4%;
+  top: 3%;
+  left: 6%;
 }
 h4,h5{
   margin-top: 2%;
