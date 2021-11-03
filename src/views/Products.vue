@@ -61,5 +61,6 @@ h4,h5{
   display: block;
   margin: auto;
   height: 70%;
+  max-width: 100%;
 }
 </style>

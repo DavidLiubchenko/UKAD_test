@@ -1,84 +1,65 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap");
 
-h4,h5{ margin: 15px;
-  font-family: 'Raleway', sans-serif;
-text-align: center;}
-  h4{
-    color: rgb(131, 131, 131);
-  }
-#hmPage{
-  font-size: 30px;
-  font-family: 'Raleway', sans-serif;
+
+#hmPage {
+  margin-top: 0;
+  font-size: 2.5em;
+  font-family: "Raleway", sans-serif;
   position: relative;
-  top: 100px;
-  left: 315px;
+  top: 8%;
+  left: 17.5%;
 }
-.allPosts{
-  width: 9999px;
-  height: 440px;
+
+#carusel {
+  position: relative;
+  padding: 0;
+  margin: 5% 15%;
+  height: 50%;
+  width: 60.3%;
+  overflow: hidden;
+}
+.allPosts {
+  width: 1000%;
+  height: 95%;
+}
+.post {
+  position: relative;
+  display: inline-block;
+  border: 1% solid #ebebeb;
+  margin: 0 0.15%;
+  height: 95%;
+  width: 3%;
+}
+.srcImg {
+  margin: auto;
+  padding: 0;
+  display: block;
+  height: 75%;
+  width: auto;
+  max-width: 100%;
+}
+h4,
+h5 {
+  margin: 5%;
+  font-family: "Raleway", sans-serif;
+  text-align: center;
+}
+h4 {
+  color: rgb(131, 131, 131);
 }
 .unVisible {
   visibility: hidden;
 }
-#carusel {
-  position: relative;
-  padding: 20px;
-  margin: 100px 15%;
-  height: 500px;
-  width: 1100px;
-  overflow: hidden;
+.prev {
+  left: 1%;
 }
-.post {
-    position: relative;
-    display: inline-block;
-    border: 4px solid #ebebeb;
-    margin: 0 20px;
-    height: 440px;
-  }
-  .post {
-    position: flex;
-    display: inline-block;
-    border: 4px solid #ebebeb;
-    margin: 0 20px;
-    height: 440px;
-    width: 320px;
-  }
-#carusel {
-  position: relative;
-  padding: 20px;
-  margin: 100px 15%;
-  height: 500px;
-  width: 1100px;
-  overflow: hidden;
+.next {
+  right: 1%;
 }
 .arrow {
   z-index: 1;
   position: absolute;
-  top: 45%;
-  padding: 0;
-  background: white;
-  border-radius: 20px;
-  font-size: 24px;
-  line-height: 24px;
-  color: #444;
-  display: table-cell;
-  width: 40px;
-  height: 40px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-}
-.prev {
-  left: 20px;
-}
-
-.next {
-  right: 5px;
-}
-.srcImg {
-  margin: 5px;
-  display: block;
-  width: auto;
-  height: 350px;
-  text-align: center;
-  padding-left: 35px;
-  margin-bottom: 20px;
+  top: 48%;
+  border-radius: 100%;
+  box-shadow: 0 0 10% rgba(0, 0, 0, 0.5);
 }
