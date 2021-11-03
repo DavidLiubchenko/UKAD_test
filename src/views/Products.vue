@@ -58,10 +58,8 @@ h4,h5{
   overflow: hidden;
 }
 .srcImgProd{
-  margin: 2%;
   display: block;
-  width: 75%;
+  margin: auto;
   height: 70%;
-  padding-left: 28% ;
 }
 </style>

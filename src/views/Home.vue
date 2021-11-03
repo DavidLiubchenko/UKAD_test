@@ -122,10 +122,11 @@ export default {
   width: 3%;
 }
 .srcImg {
-  margin: 5%;
+  margin: auto;
+  padding: 0;
   display: block;
-  width: 75%;
   height: 75%;
+  width: auto;
 }
 h4,
 h5 {
