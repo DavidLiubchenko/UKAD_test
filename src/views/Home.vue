@@ -1,5 +1,8 @@
 <template>
-  <h2 id="hmPage">Home Page</h2>
+  <div id="hmPage">
+    <h2 >Home Page</h2>
+  </div>
+  
   <div id="carusel">
     <button @click="toTheLeft" :class="{ unVisible: position == 0 }">
       <img src="../imgs/left_click.png" alt="leftClickButt" class="arrow prev" />
@@ -34,6 +37,7 @@ export default {
       API_URL: "https://kinopoiskapiunofficial.tech/api/v2.2/films/top",
       position: 0,
       posts: [],
+      
     };
   },
 
@@ -87,15 +91,7 @@ export default {
 @import "./styleHome.css";
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap");
 
-h4,
-h5 {
-  margin: 15px;
-  font-family: "Raleway", sans-serif;
-  text-align: center;
-}
-h4 {
-  color: rgb(131, 131, 131);
-}
+
 #hmPage {
   margin-top: 0;
   font-size: 30px;
@@ -107,56 +103,53 @@ h4 {
 
 #carusel {
   position: relative;
-  padding: 20px;
-  margin: 100px 15%;
-  height: 500px;
-  width: 1100px;
+  padding: 0;
+  margin: 5% 15%;
+  height: 50%;
+  width: 60.3%;
   overflow: hidden;
 }
 .allPosts {
-  width: 9999px;
-  height: 440px;
+  width: 1000%;
+  height: 100%;
 }
 .post {
   position: relative;
   display: inline-block;
-  border: 4px solid #ebebeb;
-  margin: 0 20px;
-  height: 440px;
-  width: 320px;
+  border: 1% solid #ebebeb;
+  margin: 0 0.15%;
+  height: 95%;
+  width: 3%;
 }
 .srcImg {
-  margin: 5px;
+  margin: 5%;
   display: block;
-  width: auto;
-  height: 350px;
+  width: 80%;
+  height: 75%;
+}
+h4,
+h5 {
+  margin: 5%;
+  font-family: "Raleway", sans-serif;
   text-align: center;
-  padding-left: 35px;
-  margin-bottom: 20px;
+}
+h4 {
+  color: rgb(131, 131, 131);
 }
 .unVisible {
   visibility: hidden;
 }
 .prev {
-  left: 20px;
+  left: 1%;
 }
-
 .next {
-  right: 5px;
+  right: 1%;
 }
 .arrow {
   z-index: 1;
   position: absolute;
   top: 48%;
-  padding: 0;
-  background: white;
-  border-radius: 20px;
-  font-size: 24px;
-  line-height: 24px;
-  color: #444;
-  display: table-cell;
-  width: 40px;
-  height: 40px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border-radius: 100%;
+  box-shadow: 0 0 10% rgba(0, 0, 0, 0.5);
 }
 </style>
