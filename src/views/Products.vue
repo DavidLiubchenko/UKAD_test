@@ -36,6 +36,10 @@ h2 {
   top: 2%;
   left: 4%;
 }
+h4,h5{
+  margin-top: 2%;
+  font-size: 0.9em;
+}
 .allProd {
   position: relative;
   display: block;
@@ -48,15 +52,16 @@ h2 {
   position: relative;
   display: inline-block;
   border: 4px solid #ebebeb;
-  height: 40%;
+  height: 43%;
   width: 20%;
   margin: 1%;
+  overflow: hidden;
 }
 .srcImgProd{
-  margin: 1%;
+  margin: 2%;
   display: block;
-  width: 70%;
+  width: 75%;
   height: 70%;
-  padding-left: 35% ;
+  padding-left: 28% ;
 }
 </style>
