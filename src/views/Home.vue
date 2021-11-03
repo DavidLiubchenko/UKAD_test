@@ -87,6 +87,6 @@ export default {
 };
 </script>
 
-<style scoped>
+<style >
   @import "./styleHome.css";
 </style>
