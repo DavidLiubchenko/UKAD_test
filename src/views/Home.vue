@@ -12,7 +12,7 @@
         class="post"
         :key="post.id"
         v-for="post in posts"
-        :style="{ left: '-' + position * 360 + 'px' }"
+        :style="{ left: '-' + position * 3.3 + '%' }"
       >
         <img class="srcImg" :src="post.imgSrc" alt="Здесь невидимая картинка" />
         <h4>{{ post.title }}</h4>
@@ -94,7 +94,7 @@ export default {
 
 #hmPage {
   margin-top: 0;
-  font-size: 30px;
+  font-size: 2.5em;
   font-family: "Raleway", sans-serif;
   position: relative;
   top: 8%;
@@ -111,7 +111,7 @@ export default {
 }
 .allPosts {
   width: 1000%;
-  height: 100%;
+  height: 95%;
 }
 .post {
   position: relative;
@@ -124,7 +124,7 @@ export default {
 .srcImg {
   margin: 5%;
   display: block;
-  width: 80%;
+  width: 75%;
   height: 75%;
 }
 h4,
