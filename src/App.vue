@@ -1,7 +1,7 @@
 <template>
   <nav class="page-navigation">
     <div></div>
-    <div><img class="UKADimg" src="./imgs/UCAD.png" alt="UKAD"  /></div>
+    <div><img class="UKADimg" src="./imgs/UCAD.png" alt="UKAD" /></div>
     <div
       class="link"
       @click="
@@ -51,5 +51,5 @@ export default {
 </script>
 
 <style>
-  @import "./App_css.css";
+@import "./App_css.css";
 </style>
