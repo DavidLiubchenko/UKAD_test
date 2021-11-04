@@ -7,6 +7,7 @@
       <h5>{{ post.body }}</h5>
     </div>
   </div>
+  <div class="lastLine"></div>
 </template>
 
 <script>
@@ -29,11 +30,10 @@ export default {
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap");
 
 h2 {
-  margin-top: 0;
+  margin-top: 3%;
   font-size: 30px;
   font-family: "Raleway", sans-serif;
   position: relative;
-  top: 3%;
   left: 6%;
 }
 h4,h5{
@@ -41,16 +41,16 @@ h4,h5{
   font-size: 0.9em;
 }
 .allProd {
-  position: relative;
-  display: block;
-  /* border: 2px solid red; */
-  margin: 2% 5% 5% 5%;
-  width: 95%;
-  height: 75%;
+  display: inline-flex;
+  flex-wrap: wrap;
+  margin: 1% 5% 1% 5%;
+  width: 80%;
+  min-height: 15%;
+  max-height: 20%;
+  height: 20%;
 }
 .prod {
   position: relative;
-  display: inline-block;
   border: 4px solid #ebebeb;
   height: 43%;
   width: 20%;

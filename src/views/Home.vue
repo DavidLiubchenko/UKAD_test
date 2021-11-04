@@ -24,6 +24,7 @@
       <img src="../imgs/right_click.png" alt="RightClickButt" class="arrow next" />
     </button>
   </div>
+  <div class="lastLine"></div>
 </template>
 
 <script>
@@ -73,7 +74,7 @@ export default {
             ", Country: " +
             Data.films[i].countries[0].country,
         };
-        this.posts.push(NewPost);
+        this.posts.push(NewPost); 
       }
       localStorage.setItem("UKAD_posts_movies", JSON.stringify(this.posts));
     },
@@ -88,5 +89,82 @@ export default {
 </script>
 
 <style >
-  @import "./styleHome.css";
+  /* @import "./styleHome.css"; */
+  @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap");
+
+
+#hmPage {
+  margin-top: 1%;
+  font-size: 2.5em;
+  font-family: "Raleway", sans-serif;
+  position: relative;
+  left: 16%;
+}
+
+#carusel {
+  display: block;
+  position: relative;
+  padding: 0;
+  margin: 2% 15% 7.5%;
+  height: 65%;
+  width: 60.3%;
+  overflow: hidden;
+}
+.allPosts {
+  width: 1000%;
+  height: 95%;
+}
+.post {
+  position: relative;
+  display: inline-block;
+  border: 4px solid #ebebeb;
+  margin: 0 0.15%;
+  min-height: 30%;
+  height: 95%;
+  width: 3%;
+}
+.srcImg {
+  margin: auto;
+  padding: 0;
+  display: block;
+  height: 75%;
+  width: auto;
+  max-width: 100%;
+}
+h4,
+h5 {
+  margin: 5%;
+  font-family: "Raleway", sans-serif;
+  text-align: center;
+}
+h4 {
+  color: rgb(131, 131, 131);
+}
+.unVisible {
+  visibility: hidden;
+}
+.prev {
+  left: 0.7%;
+}
+.next {
+  right: 1%;
+}
+.arrow {
+  width: 4%;
+  z-index: 1;
+  position: absolute;
+  top: 48%;
+  border-radius: 100%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.lastLine{
+  display: flex;
+  align-self:flex-end;
+  position: relative;
+  width: 100%;
+  background: #002b32;
+  height: 10%;
+  flex: 0 0 auto;
+}
+
 </style>
