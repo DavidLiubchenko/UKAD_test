@@ -30,6 +30,7 @@ export default {
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap");
 
 h2 {
+  display: flex;
   margin-top: 3%;
   font-size: 30px;
   font-family: "Raleway", sans-serif;
@@ -42,25 +43,22 @@ h4,h5{
 }
 .allProd {
   display: inline-flex;
+  align-items: stretch;
   flex-wrap: wrap;
   margin: 1% 5% 1% 5%;
   width: 80%;
-  min-height: 15%;
-  max-height: 20%;
-  height: 20%;
 }
 .prod {
   position: relative;
   border: 4px solid #ebebeb;
-  height: 43%;
-  width: 20%;
+  width: 23%;
   margin: 1%;
   overflow: hidden;
 }
 .srcImgProd{
-  display: block;
-  margin: auto;
-  height: 70%;
-  max-width: 100%;
+  display: flex;
+  margin: 2% auto;
+  height: auto;
+  width: 50%;
 }
 </style>

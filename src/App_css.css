@@ -1,7 +1,8 @@
 
 #app{
   display: flex;
-  min-height: 95%;
+  justify-content: space-between;
+  min-height: 100%;
   width: 100%;
   position: relative;
   flex-direction: column;
@@ -74,41 +75,33 @@ h6 {
 
 .page-navigation {
   display: flex;
-  flex-wrap:wrap;
-  align-items: flex-start;
+  justify-content: flex-start;
   width: 100%;
   background-color: #002b32;
-  position: relative;
   height: 10%;
 }
 
 .page-navigation div {
   height: 100%;
-  display: inline-block;
+  display: flex;
   width: 10%;
-  vertical-align: middle;
-  position: relative;
+  justify-content: flex-end;
 }
 
 .UKADimg {
-  display: flex;
-  align-items: flex-start;
-  margin-top: 0;
   height: 100%;
   width: auto;
   max-width: 100%;
-  position: relative;
 }
 .link{
   height: 100%;
 }
 .router {
-
+  box-sizing:border-box;
   padding: 30%;
-  display: inline-block;
-  width: 100%;
-  height: 100%;
-  text-align: center;
+  /* display: inline-block; */
+  display: flex;
+  justify-content: center;
   font-size: 1em;
 }
 
@@ -125,4 +118,11 @@ A:hover {
 .backColor_Dark {
   background-color: #01242b;
   height: 100%;
+}
+.lastLine{
+  display: flex;
+  width: 100%;
+  background: #002b32;
+  height: 40px;
+  flex: 0 0 auto;
 }

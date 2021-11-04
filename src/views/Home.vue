@@ -102,34 +102,35 @@ export default {
 }
 
 #carusel {
-  display: block;
-  position: relative;
-  padding: 0;
-  margin: 2% 15% 7.5%;
-  height: 65%;
-  width: 60.3%;
-  overflow: hidden;
+    display: flex;
+    position: relative;
+    padding: 0;
+    margin: 2% 15% 3%;
+    height: 65%;
+    overflow: hidden;
+    width: 1000px;
 }
 .allPosts {
-  width: 1000%;
-  height: 95%;
+  width: 100%;
+  height: 100%;
 }
 .post {
+  box-sizing: border-box;
   position: relative;
   display: inline-block;
   border: 4px solid #ebebeb;
+  padding: 0;
   margin: 0 0.15%;
-  min-height: 30%;
-  height: 95%;
-  width: 3%;
+  height: 100%;
+  width: 33%;
 }
 .srcImg {
   margin: auto;
   padding: 0;
   display: block;
-  height: 75%;
-  width: auto;
-  max-width: 100%;
+  height: auto;
+  width: 70%;
+  /* max-width: 100%; */
 }
 h4,
 h5 {
@@ -157,14 +158,6 @@ h4 {
   border-radius: 100%;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
-.lastLine{
-  display: flex;
-  align-self:flex-end;
-  position: relative;
-  width: 100%;
-  background: #002b32;
-  height: 10%;
-  flex: 0 0 auto;
-}
+
 
 </style>
