@@ -28,6 +28,9 @@
         >PRODUCTS</router-link
       >
     </div>
+    <div></div>
+    <div></div>
+    <div></div>
   </nav>
   <router-view />
 </template>
