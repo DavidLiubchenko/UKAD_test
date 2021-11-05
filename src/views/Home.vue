@@ -12,7 +12,7 @@
         class="post"
         :key="post.id"
         v-for="post in posts"
-        :style="{ left: '-' + position * 3.3 + '%' }"
+        :style="{ left: '-' + position * 33 + '%' }"
       >
         <img class="srcImg" :src="post.imgSrc" alt="Здесь невидимая картинка" />
         <h4>{{ post.title }}</h4>
@@ -106,12 +106,12 @@ export default {
     position: relative;
     padding: 0;
     margin: 2% 15% 3%;
-    height: 65%;
+    height: auto  ;
     overflow: hidden;
-    width: 1000px;
+    width: 75%;
+    height: 50%;
 }
 .allPosts {
-  width: 100%;
   display:inline-flex;
 }
 .post {
@@ -121,8 +121,8 @@ export default {
   border: 4px solid #ebebeb;
   padding: 0;
   margin: 0 1%;
-  height: 100%;
-  width: 33%;
+  min-height: 100%;
+  min-width: 31%;
 }
 .srcImg {
   margin: auto;
@@ -145,7 +145,7 @@ h4 {
   visibility: hidden;
 }
 .prev {
-  left: 0.7%;
+  left: 1%;
 }
 .next {
   right: 1%;
