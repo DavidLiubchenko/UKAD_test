@@ -100,7 +100,7 @@ h6 {
 }
 .router {
   box-sizing:border-box;
-  padding: 30%;
+  padding: 34%;
   /* display: inline-block; */
   display: flex;
   justify-content: center;
