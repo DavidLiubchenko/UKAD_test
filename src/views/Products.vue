@@ -39,7 +39,7 @@ h2 {
 }
 h4,h5{
   margin-top: 2%;
-  font-size: 0.9em;
+  font-size: calc(0.5em + 0.5vw);
 }
 .allProd {
   display: inline-flex;
