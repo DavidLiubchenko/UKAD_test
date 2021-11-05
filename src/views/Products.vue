@@ -54,12 +54,13 @@ h4,h5{
   width: 20%;
   margin: 1%;
   overflow: hidden;
+  font-size: 0.8em;
 }
 .srcImgProd{
   display: flex;
   margin: 2% auto;
   height: auto;
-  min-height: 80%;
+  min-height: 70%;
   width: 60%;
 }
 </style>

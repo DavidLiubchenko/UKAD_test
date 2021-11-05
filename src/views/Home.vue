@@ -130,15 +130,16 @@ export default {
   margin: 2% auto;
   padding: 0;
   display: block;
-  height: 80%;
+  min-height: 80%;
   width: 71%;
   /* max-width: 100%; */
 }
 h4,
 h5 {
-  margin: 5%;
+  margin: 2%;
   font-family: "Raleway", sans-serif;
   text-align: center;
+  font-size: 0.8em;
 }
 h4 {
   color: rgb(131, 131, 131);
