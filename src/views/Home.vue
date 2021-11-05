@@ -48,6 +48,12 @@ export default {
         this.position--;
       }
     },
+    toTheRight() {
+      if (this.position < 5) {
+        this.position++;
+      }
+    },
+    
     async getMovie(url) {
       const resp = await fetch(url, {
         headers: {
@@ -79,11 +85,7 @@ export default {
       localStorage.setItem("UKAD_posts_movies", JSON.stringify(this.posts));
     },
 
-    toTheRight() {
-      if (this.position < 5) {
-        this.position++;
-      }
-    },
+    
   },
 };
 </script>
@@ -105,11 +107,11 @@ export default {
     display: flex;
     position: relative;
     padding: 0;
-    margin: 2% 15% 3%;
+    margin: 1% 13% 3%;
     height: auto  ;
     overflow: hidden;
-    width: 75%;
-    height: 50%;
+    width: 76%;
+    /* height: 70%; */
 }
 .allPosts {
   display:inline-flex;
@@ -120,16 +122,16 @@ export default {
   display: inline-block;
   border: 4px solid #ebebeb;
   padding: 0;
-  margin: 0 1%;
-  min-height: 100%;
-  min-width: 31%;
+  margin: 0 2%;
+  min-height: 70%;
+  min-width:29%;
 }
 .srcImg {
   margin: auto;
   padding: 0;
   display: block;
   height: auto;
-  width: 70%;
+  width: 71%;
   /* max-width: 100%; */
 }
 h4,
@@ -148,11 +150,11 @@ h4 {
   left: 1%;
 }
 .next {
-  right: 1%;
+  right: 1.6%;
 }
 .arrow {
-  width: 4%;
-  z-index: 1;
+  width: 3%;
+  z-index: 2;
   position: absolute;
   top: 48%;
   border-radius: 100%;
