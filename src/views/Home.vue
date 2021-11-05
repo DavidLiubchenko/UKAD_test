@@ -91,76 +91,8 @@ export default {
 </script>
 
 <style >
-  /* @import "./styleHome.css"; */
-  @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap");
-
-
-#hmPage {
-  margin-top: 1%;
-  font-size: 2.5em;
-  font-family: "Raleway", sans-serif;
-  position: relative;
-  left: 16%;
-}
-
-#carusel {
-    display: flex;
-    position: relative;
-    padding: 0;
-    margin: 1% 13% 3%;
-    height: auto  ;
-    overflow: hidden;
-    width: 76%;
-    /* height: 70%; */
-}
-.allPosts {
-  display:inline-flex;
-}
-.post {
-  box-sizing: border-box;
-  position: relative;
-  display: inline-block;
-  border: 4px solid #ebebeb;
-  padding: 0;
-  margin: 0 2%;
-  min-height: 70%;
-  min-width:29%;
-}
-.srcImg {
-  margin: 2% auto;
-  padding: 0;
-  display: block;
-  min-height: 80%;
-  width: 71%;
-  /* max-width: 100%; */
-}
-h4,
-h5 {
-  margin: 2%;
-  font-family: "Raleway", sans-serif;
-  text-align: center;
-  font-size: 0.8em;
-}
-h4 {
-  color: rgb(131, 131, 131);
-}
-.unVisible {
-  visibility: hidden;
-}
-.prev {
-  left: 1%;
-}
-.next {
-  right: 1.6%;
-}
-.arrow {
-  width: 3%;
-  z-index: 2;
-  position: absolute;
-  top: 48%;
-  border-radius: 100%;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-}
+  @import "./styleHome.css";
+  
 
 
 </style>

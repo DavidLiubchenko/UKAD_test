@@ -59,8 +59,8 @@ h4,h5{
 .srcImgProd{
   display: flex;
   margin: 2% auto;
-  height: auto;
-  min-height: 70%;
-  width: 60%;
+  height: 70%;
+  width: auto;
+  max-width: 60%;
 }
 </style>
