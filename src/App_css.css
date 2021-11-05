@@ -89,9 +89,9 @@ h6 {
 }
 
 .UKADimg {
-  height: 100%;
+  min-height: 100%;
   width: auto;
-  max-width: 100%;
+  min-width: 100%;
 }
 .link{
   min-height: 10%;
