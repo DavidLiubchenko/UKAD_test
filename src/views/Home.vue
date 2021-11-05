@@ -127,10 +127,10 @@ export default {
   min-width:29%;
 }
 .srcImg {
-  margin: auto;
+  margin: 2% auto;
   padding: 0;
   display: block;
-  height: auto;
+  height: 80%;
   width: 71%;
   /* max-width: 100%; */
 }

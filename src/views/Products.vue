@@ -46,12 +46,12 @@ h4,h5{
   align-items: stretch;
   flex-wrap: wrap;
   margin: 1% 5% 1% 5%;
-  width: 80%;
+  width: 76%;
 }
 .prod {
   position: relative;
   border: 4px solid #ebebeb;
-  width: 23%;
+  width: 20%;
   margin: 1%;
   overflow: hidden;
 }
@@ -59,6 +59,7 @@ h4,h5{
   display: flex;
   margin: 2% auto;
   height: auto;
-  width: 50%;
+  min-height: 80%;
+  width: 60%;
 }
 </style>
