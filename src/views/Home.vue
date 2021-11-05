@@ -112,7 +112,7 @@ export default {
 }
 .allPosts {
   width: 100%;
-  height: 100%;
+  display:inline-flex;
 }
 .post {
   box-sizing: border-box;
@@ -120,7 +120,7 @@ export default {
   display: inline-block;
   border: 4px solid #ebebeb;
   padding: 0;
-  margin: 0 0.15%;
+  margin: 0 1%;
   height: 100%;
   width: 33%;
 }

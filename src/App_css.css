@@ -94,7 +94,9 @@ h6 {
   max-width: 100%;
 }
 .link{
-  height: 100%;
+  min-height: 10%;
+  width: 10%;
+  min-width: 10%;
 }
 .router {
   box-sizing:border-box;
