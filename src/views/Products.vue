@@ -1,5 +1,9 @@
-<template>
-  <h2>PRODUCTS</h2>
+<template >
+
+  <div id="hmPage">
+    <h2 >PRODUCTS</h2>
+  </div>
+<template class="centerElem">
   <div class="allProd">
     <div class="prod" :key="post.id" v-for="post in posts">
       <img class="srcImgProd" :src="post.imgSrc" alt="Здесь невидимая картинка" />
@@ -7,6 +11,7 @@
       <h5>{{ post.body }}</h5>
     </div>
   </div>
+  </template>
   <div class="lastLine"></div>
 </template>
 
@@ -29,24 +34,23 @@ export default {
 <style scoped>
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap");
 
-h2 {
+ h2 {
   display: flex;
-  margin-top: 3%;
+  margin-top: 2%;
   font-size: 30px;
   font-family: "Raleway", sans-serif;
   position: relative;
-  left: 6%;
-}
+  left: 2%;
+}  
 h4,h5{
   margin-top: 2%;
   font-size: calc(0.5em + 0.5vw);
 }
 .allProd {
-  display: inline-flex;
-  align-items: stretch;
-  flex-wrap: wrap;
-  margin: 1% 5% 1% 5%;
-  width: 76%;
+    display: flex;
+    flex-wrap: wrap;
+    width: 76%;
+    justify-content: center;
 }
 .prod {
   position: relative;
