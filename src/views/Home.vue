@@ -1,29 +1,30 @@
 <template>
   <div id="hmPage">
-    <h2 >Home Page</h2>
+    <h2>Home Page</h2>
   </div>
-  
-  <div id="carusel">
-    <button @click="toTheLeft" :class="{ unVisible: position == 0 }">
-      <img src="../imgs/left_click.png" alt="leftClickButt" class="arrow prev" />
-    </button>
-    <div class="allPosts">
-      <div
-        class="post"
-        :key="post.id"
-        v-for="post in posts"
-        :style="{ left: '-' + position * 33 + '%' }"
-      >
-        <img class="srcImg" :src="post.imgSrc" alt="Здесь невидимая картинка" />
-        <h4>{{ post.title }}</h4>
-        <h5>{{ post.body }}</h5>
+  <template class="centerElem">
+    <div id="carusel">
+      <button @click="toTheLeft" :class="{ unVisible: position == 0 }">
+        <img src="../imgs/left_click.png" alt="leftClickButt" class="arrow prev" />
+      </button>
+      <div class="allPosts">
+        <div
+          class="post"
+          :key="post.id"
+          v-for="post in posts"
+          :style="{ left: '-' + position * 33 + '%' }"
+        >
+          <img class="srcImg" :src="post.imgSrc" alt="Здесь невидимая картинка" />
+          <h4>{{ post.title }}</h4>
+          <h5>{{ post.body }}</h5>
+        </div>
       </div>
-    </div>
 
-    <button v-if="position != 5" @click="toTheRight">
-      <img src="../imgs/right_click.png" alt="RightClickButt" class="arrow next" />
-    </button>
-  </div>
+      <button v-if="position != 5" @click="toTheRight">
+        <img src="../imgs/right_click.png" alt="RightClickButt" class="arrow next" />
+      </button>
+    </div>
+  </template>
   <div class="lastLine"></div>
 </template>
 
@@ -38,7 +39,6 @@ export default {
       API_URL: "https://kinopoiskapiunofficial.tech/api/v2.2/films/top",
       position: 0,
       posts: [],
-      
     };
   },
 
@@ -53,7 +53,7 @@ export default {
         this.position++;
       }
     },
-    
+
     async getMovie(url) {
       const resp = await fetch(url, {
         headers: {
@@ -80,19 +80,14 @@ export default {
             ", Country: " +
             Data.films[i].countries[0].country,
         };
-        this.posts.push(NewPost); 
+        this.posts.push(NewPost);
       }
       localStorage.setItem("UKAD_posts_movies", JSON.stringify(this.posts));
     },
-
-    
   },
 };
 </script>
 
-<style >
-  @import "./styleHome.css";
-  
-
-
+<style>
+@import "./styleHome.css";
 </style>
